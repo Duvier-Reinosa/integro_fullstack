@@ -2,7 +2,8 @@
 
 function is_palindrome($input) {
     //solve this method that says if the sentence is palindrome or not
-    $input=strtolower(str_replace([" ", ",", "."], "", $input));
+    $input = strtolower(str_replace([" ", ",", "."], "", $input));
+    $input = str_replace(["á", "é", "í", "ó", "ú"],["a", "e", "i", "o", "u"], $input );
     $invert = strrev($input);
     if($input == $invert){
         return true;
