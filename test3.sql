@@ -1,0 +1,1 @@
+SELECT u.id , u.name, u.birthdate, uc.customer_id, c.name AS customer_name  from users AS u LEFT JOIN user_customer AS uc ON uc.user_id = u.id RIGHT JOIN customer AS c ON c.id = uc.customer_id WHERE u.status = 1 AND c.status = 1 AND extract(year from age(CURRENT_DATE, u.birthdate)) > 17;
