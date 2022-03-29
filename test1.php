@@ -11,7 +11,7 @@ function is_palindrome($input) {
             return false;
         }
     }
-    return true;
+    return true;//if don´t enter in other returns is because is a palindrome
 }
 
 $input = "Allí por la tropa portado, traído a ese paraje de maniobras, una tipa como capitán usar boina me dejara, pese a odiar toda tropa por tal ropilla";
